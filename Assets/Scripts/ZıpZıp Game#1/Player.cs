@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        float moveInput = Input.acceleration.x;
-        //float moveInput = Input.GetAxis("Horizontal");
+        //float moveInput = Input.acceleration.x;
+        float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
         if (isJumping)
