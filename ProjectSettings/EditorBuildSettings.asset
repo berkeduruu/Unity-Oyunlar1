@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Menu/MainMenu.unity
+    guid: fb96d2b250c256f40bbb3355a8ea3bf2
+  - enabled: 1
+    path: Assets/Scenes/Menu/GameSelectMenu.unity
+    guid: 5b3c4d783e85e2342b18452d4bbc7797
+  - enabled: 1
+    path: Assets/Scenes/Menu/StoreMenu.unity
+    guid: 2a6dad0d8dbc3ed43b333af796b25ef3
+  - enabled: 1
+    path: "Assets/Scenes/Games/Z\u0131pZ\u0131p Game#1.unity"
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Games/BallMerge Game#2.unity
+    guid: f1b6ca01b79cf7440b4ea6183189c9e8
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 61523f5e842c39f4facba94cc6c1c589, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: b56a8254c3a981b4fa437e81e60ae868, type: 2}

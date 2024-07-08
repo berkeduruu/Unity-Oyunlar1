@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void Restart()
-    {//aa
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Resume();
     } 
