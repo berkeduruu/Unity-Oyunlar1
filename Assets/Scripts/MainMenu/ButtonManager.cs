@@ -10,18 +10,26 @@ public class ButtonManager : MonoBehaviour
 
     public void PlayGames()
     {
-        SceneManager.LoadScene("GameSelectMenu");
+        SceneManager.LoadScene(1);// 1 is index of select games scene
     }
 
     public void StoreMenu()
     {
-        SceneManager.LoadScene("StoreMenu");
+        SceneManager.LoadScene(2);// 2 is index of scane store
     }
 
-    public void SettingsMenu()
+    public void SettingsMenu(bool select)
     {
-        SettingMenu.SetActive(true);
+        if (select)
+        {
+            SettingMenu.SetActive(true);//for open setting button
+        }
+        else
+        {
+            SettingMenu.SetActive(false);//for close settings button
+        }
     }
+
 
     public void QuitApp()
     {
