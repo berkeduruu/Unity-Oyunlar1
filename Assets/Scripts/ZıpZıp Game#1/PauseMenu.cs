@@ -26,6 +26,6 @@ public class PauseMenu : MonoBehaviour
     } 
     public void QuitGame()//þimdilik ana menü olmadýðýndan oyunu kapatýyor
     {
-        Application.Quit(); // Oyunu kapat
+        SceneManager.LoadScene(0); // Oyunu kapat
     }
 }

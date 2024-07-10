@@ -8,14 +8,9 @@ public class ButtonManager : MonoBehaviour
     public GameObject SettingMenu;
 
 
-    public void PlayGames()
+    public void SceneOpen(int sceneNumber)
     {
-        SceneManager.LoadScene(1);// 1 is index of select games scene
-    }
-
-    public void StoreMenu()
-    {
-        SceneManager.LoadScene(2);// 2 is index of scane store
+        SceneManager.LoadScene(sceneNumber);
     }
 
     public void SettingsMenu(bool select)
