@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 68178787}
   - component: {fileID: 68178789}
   - component: {fileID: 68178788}
+  - component: {fileID: 68178790}
   m_Layer: 0
   m_Name: HexagonTile
   m_TagString: Untagged
@@ -334,6 +335,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &68178790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68178786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1d7f287b2e6b55459168cd726a5fb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileEmpty: {fileID: 11400000, guid: e59ddc7f9899c1849a169e887ef9a8f4, type: 2}
+  tileMine: {fileID: 11400000, guid: f981e8716f6fbac42b8eb7bc1796e4ae, type: 2}
+  tileFlag: {fileID: 11400000, guid: ee49c28fc648be040987cc3fb173e0f2, type: 2}
+  tileUnknown: {fileID: 11400000, guid: 09a0d38b562e7604c944bcab4f29fb59, type: 2}
+  tileNum1: {fileID: 11400000, guid: cde4ef1c0a657874690d938a8c70dd11, type: 2}
+  tileNum2: {fileID: 11400000, guid: 0c1c7ff6d8c23464a9cf99d4a3838f54, type: 2}
+  tileNum3: {fileID: 11400000, guid: 331006902aff9044d9dc21ce31cfb0eb, type: 2}
+  tileNum4: {fileID: 11400000, guid: ea6e94b9583a08941be9cb13b07d3c62, type: 2}
+  tileNum5: {fileID: 11400000, guid: 4c74fa5e909fb1944b19a75debc4b8a0, type: 2}
+  tileNum6: {fileID: 11400000, guid: 61afadb76f3ef2c4092be229c8b681b7, type: 2}
 --- !u!1 &594713401
 GameObject:
   m_ObjectHideFlags: 0
