@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MineSweeper : MonoBehaviour
 {
-    public int width = 20, height = 20;
+    public int width = 20, height = 20, mineCount = 10;
 
     private Board board;
     private Cells[,] stateCell; 
@@ -23,11 +23,16 @@ public class MineSweeper : MonoBehaviour
     {
         stateCell = new Cells[width, height];
 
+
+
         GenerateCells();
+        GenerateMines();
 
+
+
+
+        Camera.main.transform.position = new Vector3(width / 2 - 1.9f, height / 2 , -1);
         board.Draw(stateCell);
-
-        Camera.main.transform.position = new Vector3(width / 2 - 2.1f, height / 2 , -1);
     }
 
 
@@ -45,4 +50,20 @@ public class MineSweeper : MonoBehaviour
         }
     }
 
+    private void GenerateMines()
+    {
+        for (int i = 0; i < mineCount; i++)
+        {
+            int x = Random.Range(0, width);
+            int y = Random.Range(0, height);
+
+            if(stateCell[x, y].type == Cells.Type.Mine)
+            {
+                i--;
+                continue;
+            }
+
+            stateCell[x, y].type = Cells.Type.Mine;
+        }
+    }
 }
