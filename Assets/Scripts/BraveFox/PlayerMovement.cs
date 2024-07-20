@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float speedAmount;
     public float jumpAmount = 3f;
+    public Animator animator;
     void Start()
     {
         rgb = GetComponent<Rigidbody2D>();  
@@ -20,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
 
         velocity = new Vector3(Input.GetAxis("Horizontal"), 0f);
         transform.position += velocity * speedAmount * Time.deltaTime;
+        animator.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+
 
         if (Input.GetButtonDown("Jump") && Mathf.Approximately(rgb.velocity.y , 0 )){
             rgb.AddForce(Vector3.up * jumpAmount, ForceMode2D.Impulse);
